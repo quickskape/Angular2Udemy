@@ -11,6 +11,14 @@ export class CoursesComponent {
     courses: Array<Course>;
 
     constructor(private coursesService: CoursesService) {
-        this.courses = coursesService.getCourses();
+        this.courses = []
+    }
+
+    public getCourses() {
+        this.courses = this.coursesService.getCourses()   
+    }
+
+    public clearCourse() {
+        this.courses = []
     }
 }
