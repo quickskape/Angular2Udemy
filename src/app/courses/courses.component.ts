@@ -19,6 +19,7 @@ export class CoursesComponent {
 
     constructor(private coursesService: CoursesService) {
         this.courses = []
+        this.getCourses()
     }
 
     public getCourses() {
