@@ -5,8 +5,7 @@
 <button (click)="getCourses()">Get courses</button>
 <button (click)="clearCourse()">Clear </button>
 
-<ul>
-    <li *ngFor="let course of courses">
-        Course: {{ course.name }} Time: {{ course.time }}
-    </li>
-</ul>
+
+<md-card *ngFor="let course of courses">
+    Course: {{ course.name }} Time: {{ course.time }}
+</md-card>
