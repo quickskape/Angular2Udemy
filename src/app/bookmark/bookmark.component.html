@@ -1,0 +1,3 @@
+<!--<span class="fa" [class.fa-star-o]="!isBookmarked" [(class.fa-star)]="isBookmarked" (click)=""></span>-->
+
+<span class="fa" [ngClass]="{'fa-star': isBookmarked, 'fa-star-o': !isBookmarked}" (click)="onBookmark()"></span>
