@@ -8,5 +8,9 @@
 <input type="text" autoGrow />
 
 <md-card *ngFor="let course of courses">
-    Course: {{ course.name }} Time: {{ course.time }}
+    <md-card-title-group>
+        <!--<img md-card-sm-image src="path/to/img.png">-->
+        <md-card-title>{{ course.name }}</md-card-title>
+        <md-card-subtitle>{{ course.time }}</md-card-subtitle>
+    </md-card-title-group>
 </md-card>

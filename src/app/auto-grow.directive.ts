@@ -23,7 +23,7 @@ export class AutoGrowDirective {
         let newWidth = this.originalWidth + 200;
         console.log(newWidth)
 
-        let styleWidth: string = newWidth+"px";
+        let styleWidth: string = newWidth + "px";
         console.log(styleWidth)
 
         this.render.setElementStyle(this.elementRef.nativeElement, "width", styleWidth)
